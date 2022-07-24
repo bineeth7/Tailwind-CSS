@@ -7,8 +7,8 @@
 </head>
 
 <body class="text-gray-600 font-body"> <!--(font-body)using @imported google Nunito font-->
-    <div class="text-gray-400"> <!-- content wrapper-->
-        <div>
+    <div class="grid md:grid-cols-3"> <!-- content wrapper-->
+        <div class="md:col-span-1">
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
@@ -35,16 +35,13 @@
             </nav>
         </div> <!--end nav-->
 
-        <main class="px-16 py-6 bg-gray-100">
+
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
             <div class="flex justify-center md:justify-end">
                 <a href="#" class="text-red-700">Log in</a>
                 <a href="#" class="text-red-700 ml-2">Sign Up</a>
             </div>
-            <!-- <div class="flex items-center justify-center">
-               <div class="bg-red-500 h-4 w-6"></div>
-               <div class="bg-blue-500 h-8 w-6"></div>
-               <div class="bg-green-500 h-12 w-6"></div>
-            </div> -->
 
             <header>
                 <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -54,13 +51,14 @@
             <div>
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
 
-                <div class="mt-8">
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
                     <!--cards go here-->
                     <div class="card">
                         <img src="/img/burgerpepsi.jpg" alt="" class="w-full h-32 sm:-48 object-cover">
                         <div class="m-4">
-                            <span class="font-bold">5 Bean Chilli Stew</span>
-                            <span class="block text-grya-500 text-sm">Recipe by Mario</span>
+                            <span class="font-bold">McDonald's</span>
+                            <span class="block text-grya-500 text-sm">Richard and Maurice McDonald</span>
                         </div>
                         <div class="badge">
                             <span>25 min</span>
@@ -71,7 +69,7 @@
                         <img src="/img/noodles.webp" alt="Noodles" class="w-full h-32 sm:-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Noodles</span>
-                            <span class="block text-grya-500 text-sm">Recipe Flaming Fire Noodles.</span>
+                            <span class="block text-grya-500 text-sm">Flaming Fire Noodles.</span>
                         </div>
                         <div class="badge">
                             <span>25 min</span>
@@ -81,8 +79,8 @@
                     <div class="card">
                         <img src="/img/pizza.jpg" alt="" class="w-full h-32 sm:-48 object-cover">
                         <div class="m-4">
-                            <span class="font-bold">Pizza</span>
-                            <span class="block text-grya-500 text-sm">Recipe by Chris Bianco</span>
+                            <span class="font-bold">Domino's Pizza</span>
+                            <span class="block text-grya-500 text-sm">Thomas Stephen Monaghan</span>
                         </div>
                         <div class="badge">
                             <span>25 min</span>
